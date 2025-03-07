@@ -229,12 +229,10 @@ background-color: #fff;
     opacity: 1;
     visibility: visible;
 }
-
 .menu {
     padding-top: 72px;
     padding-bottom: 40px;
 }
-
 .menu-close {
     position: absolute;
     top: 24px;
@@ -257,14 +255,70 @@ background-color: #fff;
     fill: #2e2f42;
 }
 
+.menu-nav-list {
+display: flex;
+align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
 
+.menu-nav-item {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+}
 
+.menu-address-list {
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 24px;
+}
 
-
-
-
-
-
+.menu-address-item {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+.menu-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.menu-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+}
+.menu-social-icons {
+fill: #FFFFFF;
+}
+.menu-nav-item:active{
+    color:#404bbf ;
+}
+.menu-address-item:active {
+    color:#4d5ae5;
+}
 @media screen and (min-width: 768px) { 
     .menu-modal {
         display: none;
