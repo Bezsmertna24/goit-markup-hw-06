@@ -326,18 +326,19 @@ fill: #FFFFFF;
 }
 /* #endregion Menu-modal */
 
-/* #regon Hero section */
+/* #region Hero section */
 .hero-section {
     background-color: #2e2f42;
     padding: 72px 0;
     max-width: 320px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/)
+    url(../images/dark-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -347,5 +348,178 @@ fill: #FFFFFF;
     color: #fff;
     margin: 0 auto;
     max-width: 496px;
-    padding-bottom: 48px;
-}s
+    padding-bottom: 72px;
+}
+button {
+    font-family: inherit;
+}
+.hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    min-width: 169px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/dark-bg-mobile.jpg);
+    }
+
+    @media (min-resolution: 2x) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/dark-bg-mobile@2.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+.hero-section {
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)),
+        url(../images/dark-bg-tablet.jpg);
+}
+@media (min-resolution: 2x) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet@2.jpg);
+    }
+    .hero-title {
+        padding-bottom: 36px;
+    }   
+}
+}
+@media screen and (min-width: 1158px) {
+    .hero-section {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-desctop.jpg);
+    }
+
+    @media (min-resolution: 2x) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-desctop@2.jpg);
+        }
+
+        .hero-title {
+            padding-bottom: 48px;
+        }
+    }
+}
+/* #endregion Hero section */
+
+/* #region advaantages */
+.icons-adventages {
+    display: none;
+}
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.advantages-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+}
+
+.text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+.advantages-list {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .advantages-subtitle {
+    text-align: left;
+    }
+        .advantages-list {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            gap: 24px;
+            flex-direction: row;
+            row-gap: 72px;
+        }
+.advantages-list-team {
+    width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+@media screen and (min-width:1158px) {
+    .advantages {
+            padding-top: 120px;
+                padding-bottom: 120px;
+    }
+    .icons-adventages {
+            background-color: #f4f4fd;
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            width: 264px;
+            height: 112px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 8px;
+        }
+                .advantages-subtitle {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    letter-spacing: 0.02em;
+                    color: #2e2f42;
+                    margin-bottom: 8px;
+                }
+        
+                .advantages-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                }
+        
+                .advantages-list-team {
+                    width: calc((100% - 72px) / 4);
+                }
+        
+                .text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: #434455;
+                }
+}
+/* #endregion advaantages */
+
