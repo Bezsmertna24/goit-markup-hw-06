@@ -325,3 +325,27 @@ fill: #FFFFFF;
     }
 }
 /* #endregion Menu-modal */
+
+/* #regon Hero section */
+.hero-section {
+    background-color: #2e2f42;
+    padding: 72px 0;
+    max-width: 320px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/)
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 496px;
+    padding-bottom: 48px;
+}s
