@@ -384,7 +384,7 @@ button {
         .hero-section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/dark-bg-mobile@2.jpg);
+                url(../images/dark-bg-mobile@2x.jpg);
         }
     }
 }
@@ -400,7 +400,7 @@ button {
 @media (min-resolution: 2x) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet@2.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet@2x.jpg);
     }
     .hero-title {
         padding-bottom: 36px;
@@ -423,7 +423,7 @@ button {
     @media (min-resolution: 2x) {
         .hero-section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/people-office-desctop@2.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-desctop@2x.jpg);
         }
         .hero-title {
             padding-bottom: 48px;
@@ -440,10 +440,6 @@ button {
 .icons-adventages {
     display: none;
 }
-/* .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-} */
 .advantages-subtitle {
         font-weight: 700;
         font-size: 36px;
