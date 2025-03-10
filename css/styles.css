@@ -338,7 +338,10 @@ fill: #FFFFFF;
     background-size: cover;
     background-position: center;
 }
-
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .hero-title {
     font-weight: 700;
     font-size: 36px;
@@ -405,6 +408,10 @@ button {
 }
 }
 @media screen and (min-width: 1158px) {
+    .section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     .hero-section {
         padding: 188px 0;
         max-width: 1440px;
@@ -433,10 +440,10 @@ button {
 .icons-adventages {
     display: none;
 }
-.section {
+/* .section {
     padding-top: 96px;
     padding-bottom: 96px;
-}
+} */
 .advantages-subtitle {
         font-weight: 700;
         font-size: 36px;
@@ -880,3 +887,82 @@ input::placeholder {
     margin-left: 16px;
     fill: #fff;
 }
+@media screen and (min-width: 768px) {
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: center;
+    }
+        .footer-one {
+        text-align:left;
+    }
+        .footer-text {
+            max-width: 264px;
+    }
+        .footer-form {
+            margin: 0;
+        }
+        .footer-form-send {
+            display: flex;
+            gap: 24px;
+        }
+    
+        .footer-form-label {
+            display: flex;
+            flex-direction: column;
+        }
+         .text-form {
+        text-align: left;
+     }
+         .footer-icons-text {
+         text-align: left;
+     }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+            padding: 100px 0;
+        }
+    .footer .container {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: nowrap;
+        }
+        
+    .footer-one {
+            margin-right: 120px;
+        }
+
+    .footer-links:hover,
+    .footer-links:focus {
+        background-color: #31d0aa;
+        }
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        }
+    .footer-form-send {
+        display: flex;
+        gap: 24px;
+        }                          
+    .footer-form-label {
+        display: flex;
+        flex-direction: column;
+        }
+                                
+    .form-input {
+        padding-left: 16px;
+        }                       
+    .footer-button {                                                       
+     cursor: pointer;
+    }
+                                
+    .footer-button:hover {
+       background-color: #404bbf;
+    }
+                                
+}
+/* #endregion footer */
