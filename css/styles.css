@@ -441,6 +441,7 @@ button {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        margin-bottom: 8px;
 }
 
 .text {
@@ -523,3 +524,116 @@ button {
 }
 /* #endregion advaantages */
 
+/* #region team */
+.team {
+    background-color: #f4f4fd;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+.team-card {
+    padding: 32px 0;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+.characteristic-team {
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    padding-top: 32px;
+    margin-bottom: 8px;
+}
+
+.desc-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+.icons-list-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.icons-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.icons-links svg {
+    fill: #f4f4fd;
+}
+
+.icons-links:hover,
+.icons-links:focus {
+    background-color: #404bbf;
+}
+@media screen and (min-width:768px) {
+    .team {
+        max-width: 768px;
+        }
+    .team-list {
+     flex-direction: row;
+     align-items: center;
+     gap: 24px;
+     flex-wrap: wrap;
+     justify-content: center;
+     row-gap: 64px;
+ }
+}
+@media screen and (min-width:1158px) {
+        .team {
+                max-width: 1440px;
+            }
+          .characteristic-team {
+                width: calc((100% - 72px) / 4);
+    
+}
+}
