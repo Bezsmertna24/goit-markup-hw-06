@@ -571,7 +571,7 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    padding-top: 32px;
+    /* padding-top: 32px; */
     margin-bottom: 8px;
 }
 
@@ -618,9 +618,6 @@ button {
 }
 
 @media screen and (min-width:768px) {
-    .team {
-        max-width: 768px;
-        }
     .team-list {
      flex-direction: row;
      align-items: center;
@@ -926,6 +923,9 @@ input::placeholder {
             align-items: baseline;
             flex-wrap: nowrap;
         }
+        .footer-text {
+                     max-width: 264px;
+                }
         
     .footer-one {
             margin-right: 120px;
